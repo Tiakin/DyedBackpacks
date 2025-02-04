@@ -38,7 +38,7 @@ public class DyedBackpacks extends JavaPlugin implements SlimefunAddon {
         }
 
         Research research = new Research(new NamespacedKey(this, "dyed_backpacks"), 17200, "Dyed Backpacks", 24);
-        ItemGroup itemGroup = new ItemGroup(new NamespacedKey(this, "dyed_backpacks"), new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(BackpackColor.RED.getTexture())), "&4Dyed Backpacks"), 2);
+        ItemGroup itemGroup = new ItemGroup(new NamespacedKey(this, "dyed_backpacks"), CustomItemStack.create(PlayerHead.getItemStack(PlayerSkin.fromHashCode(BackpackColor.RED.getTexture())), "&4Dyed Backpacks"), 2);
 
         if (cfg.getBoolean("backpacks.small")) {
             createBackpacks(itemGroup, research, SlimefunItems.BACKPACK_SMALL, 9);
