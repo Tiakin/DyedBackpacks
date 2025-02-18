@@ -52,7 +52,7 @@ public class DyedBackpack extends SlimefunBackpack {
         // @formatter:off
         return new ItemStack[] { 
             wool,    wool,     wool,
-            leather, backpack, leather,
+            leather, backpack.item(), leather,
             wool,    wool,     wool
         };
         // @formatter:on
